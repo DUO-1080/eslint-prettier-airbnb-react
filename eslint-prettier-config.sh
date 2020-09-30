@@ -53,7 +53,7 @@ finished=false
 
 # Max Line Length Prompt
 while ! $finished; do
-  read -p "What max line length do you want to set for ESLint and Prettier? (Recommendation: 80)"
+  read -p "What max line length do you want to set for ESLint and Prettier? (Recommendation: 120)"
   if [[ $REPLY =~ ^[0-9]{2,3}$ ]]; then
     max_len_val=$REPLY
     finished=true
@@ -227,7 +227,7 @@ else
       {
         "trailingComma": "es5",
         "singleQuote": true,
-        "printWidth": 80
+        "printWidth": 120
       }
     ],
     "jsx-a11y/href-no-hash": "off",
